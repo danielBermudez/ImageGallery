@@ -9,12 +9,13 @@
 import Foundation
 class GalleryCollection {
     
-    private var savedGalleries : [ImageGallery]
-    private var deletedGalleries : [ImageGallery]
+     var savedGalleries : [ImageGallery]
+     var deletedGalleries : [ImageGallery]
     
     init(){
-        savedGalleries = []
-        deletedGalleries = []
+        let testGallery = ImageGallery(name: "test")
+        savedGalleries = [testGallery]
+        deletedGalleries = [testGallery]
     }
     
     func addGallery(new imageGallery : ImageGallery) {
